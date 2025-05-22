@@ -1,117 +1,115 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Kanika Dhyani | Portfolio</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background-color: #121212;
-      color: #e0e0e0;
-    }
-
-    header {
-      background: url('https://images.unsplash.com/photo-1536895058696-cb2250f8b1e1?auto=format&fit=crop&w=1500&q=80') center/cover no-repeat;
-      text-align: center;
-      padding: 4rem 1rem 2rem 1rem;
-      border-bottom: 1px solid #333;
-    }
-
-    header img {
-      width: 150px;
-      border-radius: 50%;
-      margin-top: 1rem;
-      border: 3px solid #555;
-      background-color: #1f1f1f;
-    }
-
-    .container {
-      max-width: 900px;
-      margin: auto;
-      padding: 2rem;
-    }
-
-    h1, h2, h3 {
-      color: #ffffff;
-    }
-
-    section {
-      margin-bottom: 2rem;
-    }
-
-    ul, li {
-      padding-left: 1rem;
-    }
-
-    a {
-      color: #64b5f6;
-      text-decoration: none;
-    }
-
-    a:hover {
-      text-decoration: underline;
-    }
-
-    .project {
-      border: 1px solid #333;
-      border-radius: 8px;
-      padding: 1rem;
-      margin-bottom: 1rem;
-      background-color: #1e1e1e;
-    }
-
-    footer {
-      text-align: center;
-      padding: 1rem;
-      font-size: 0.9rem;
-      color: #999;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kanika Dhyani - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            padding-bottom: 2rem;
+        }
+        header {
+            background: url('cover.jpg') no-repeat center center/cover;
+            color: white;
+            padding: 8rem 2rem;
+            text-align: center;
+        }
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 1.5rem;
+            padding: 1rem 0;
+            background: #1e293b;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+        }
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 2rem;
+            background: #f4f4f4;
+            border-radius: 8px;
+        }
+        #about {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2rem;
+            align-items: center;
+        }
+        #about img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 50%;
+        }
+        footer {
+            background: #1e293b;
+            color: white;
+            text-align: center;
+            padding: 1rem 0;
+            margin-top: 2rem;
+        }
+        @media (max-width: 768px) {
+            header {
+                padding: 5rem 1rem;
+            }
+            h1 {
+                font-size: 2rem;
+            }
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+            }
+            #about {
+                flex-direction: column;
+                text-align: center;
+            }
+            .container {
+                padding: 1.5rem;
+            }
+        }
+    </style>
 </head>
-
 <body>
-  <header>
-    <h1>Kanika Dhyani</h1>
-    <h2>Database Administrator | Microsoft SQL Server | Azure SQL</h2>
-    <img src="Kanika.jpg" alt="Kanika Dhyani Profile Photo">
-  </header>
+    <header style="background: url('cover.jpg') no-repeat center center/cover; color: white; padding: 8rem 0; text-align: center;">
+        
+    </header>
 
-  <div class="container">
-    <section>
-      <h2>About Me</h2>
-      <p>I am Kanika Dhyani, a Microsoft certified SQL Server and Azure SQL DBA with over 9 years of experience leading 24x7 production and application support for complex, high volume databases across Banking & Financial services, Insurance, Retail and Manufacturing industries. I'm an expert in SQL Server installation, patching, upgrades, cross-platform migrations, backup recovery, fine-tuning databases, encryption, troubleshooting performance issues, query optimization and security management.
-      I have worked in Azure Cloud environment and proficient in high availability (HA) support, disaster recovery (DR) planning with Always On, Replication or Log shipping support for business-critical applications on Windows server platform. I am adept at mentoring team members, creating technical documentation and operating within ITIL framework best practices.</p>
+    <nav>
+        <ul>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#achievements">Technical Achievements</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section id="about" class="container" style="display: flex; align-items: center; gap: 2rem; flex-wrap: wrap;">
+        <img src="Kanika.jpg" alt="Kanika Dhyani" style="width:200px; border-radius:50%; flex-shrink: 0;">
+        <div style="flex: 1; min-width: 300px;">
+            <h2>About Me</h2>
+            <p>I am Kanika Dhyani, a Microsoft certified SQL Server and Azure SQL DBA with over 9 years of experience leading 24x7 production and application support for complex, high volume databases across Banking & Financial services, Insurance, Retail and Manufacturing industries. I'm an expert in SQL Server installation, patching, upgrades, cross-platform migrations, backup recovery, fine-tuning databases, encryption, troubleshooting performance issues, query optimization and security management. I have worked in Azure Cloud environment and proficient in high availability (HA) support, disaster recovery (DR) planning with Always On, Replication or Log shipping support for business-critical applications on Windows server platform. I am adept at mentoring team members, creating technical documentation and operating within ITIL framework best practices.</p>
+        </div>
     </section>
 
-    <section>
-      <h2>Skills</h2>
-      <ul>
-        <li><strong>Database Platforms:</strong><br>Microsoft SQL Server 2022, 2019, 2017, 2016, 2014, 2012, 2008R2 and 2008; PostgreSQL and MySQL (basic proficiency)</li>
-        <li><strong>Cloud Platform and Services:</strong><br>Microsoft Azure: Azure SQL Databases, Azure SQL Managed Instance, SQL Server on Azure VM, Azure Data Factory, Azure Monitor, Azure Blob Storage</li>
-        <li><strong>HADR and Migrations:</strong><br>Disaster Recovery Planning, Always On availability group support, SQL Server Replication, Log shipping, Failover clustering, Backup and Recovery strategies; SQL Server Migration Assistant, Data Migration Assistant and Database Migration Services</li>
-        <li><strong>Performance Tuning and Optimization:</strong><br>Query tuning and Index optimization using Execution plan, Dynamic Management Views (DMVs), Extended events, Performance Monitor, Query Store</li>
-        <li><strong>Security and Compliance:</strong><br>Transparent Data Encryption (TDE), Always Encrypted, Dynamic Data Masking; GDPR, Auditing and access control</li>
-        <li><strong>Monitoring and Automation:</strong><br>Automation with T-SQL Script, PowerShell, SQL Agent Jobs; ITSM - Service-Now, BMC Remedy and Vivantio; ETL - Git, Import Export Wizard and SSIS; Monitoring Tools - SQL Profiler, SCOM, SQL Sentry, Solarwinds, Idera, AppDynamics, Moogsoft</li>
-      </ul>
-    </section>
+    <section id="achievements" class="container">
+        <h2>Achievements</h2>
 
-    <section>
-      <h2>Certifications & Awards</h2>
-      <ul>
-        <li>Microsoft Certified Professional - SQL Server Exam 70-462</li>
-        <li>Azure Fundamentals AZ-900 Certified</li>
-        <li>Microsoft Badge - Query Performance Optimization</li>
-        <li>ITIL v3 Foundation Certified</li>
-        <li>HCL Comnet Jewel Awardee</li>
-        <li>Accenture Aon AIC2020 Rewards</li>
-        <li>Automation Prime Certification - Accenture</li>
-      </ul>
-    </section>
-    <section>
-      <h2>Technical Achievements</h2>
+
+        <h3>Technical Achievements</h3>
       <ul>
         <li>Managed on-shore and off-shore team of 7 to provide end to end support of the SQL Services right from maintenance, optimization to upgrades.</li>
         <li>Conducted initial discovery calls to gather business requirements, assess the technical landscape, and define project objectives. Maintained comprehensive technical documentation, including configuration details, custom solutions, and SOPs for internal stakeholders.</li>
@@ -121,56 +119,51 @@
         <li>Reformed backup and recovery strategy for all Production and Non-production systems, removing redundancy and releasing more than 40% disk space allocation.</li>
         <li>Automated SQL Server alerting by integrating Moogsoft with xMatters, enabling real-time incident escalation through mobile phone, cutting response times of critical database issues by 90%.</li>
       </ul>
-    </section>
 
-    <section>
-      <h2>Projects</h2>
-      <div class="project">
-        <h3>Aon (Accenture)</h3>
-        <p>Stabalized and led a hybrid(on-shore and off-shore) team of 5 providing end to end application database support. Recognized as an 'Automation Prime’ for efforts around automating routine DBA tasks and improving incident response times using scripting and monitoring tools. One of such project was to automate SQL Server alerting by integrating Moogsoft with xMatters, enabling real-time incident escalation through mobile phone, cutting response times of critical database issues by 40%.</p>
-        <p><strong>Technologies:</strong> Tableau, Data Visualization</p>
-      </div>
-
-      <div class="project">
-        <h3>iQor</h3>
-        <p>Managed SQL databases supporting critical data operations. Reformed backup and recovery strategy for all non-production systems, removing redundancy and releasing more than 40% disk space allocation. Led POCs for new on premise and Azure features, documenting findings and presenting implementation strategies to stakeholders.</p>
-        <p><strong>Technologies:</strong> Azure Databricks, SQL, Delta Lake</p>
-      </div>
-
-
-      <div class="project">
-        <h3>Bekaert (HCL)</h3>
-        <p>Installed, patched, and managed SQL Server across multiple platforms and performing database refresh and restore activity on Pre-Prods with standard configrations and support.Optimized SQL database performance by fine-tuning queries, re-indexing, and monitoring system health, resulting in a 40% reduction in query execution time.</p>
-        <p><strong>Technologies:</strong> Azure Databricks, SQL, Delta Lake</p>
-      </div>
-
-      <div class="project">
-        <h3>Rendeview Ltd (Freelance)</h3>
-        <p>Conducted initial discovery calls to gather business requirements, assess the technical landscape, and define project objectives. Maintained comprehensive technical documentation, including configuration details, custom solutions, and SOPs for internal stakeholders.</p>
-        <p><strong>Technologies:</strong> Azure Databricks, SQL, Delta Lake</p>
-      </div>
-
-      <div class="project">
-        <h3>Data Analysis and Visualization Using Databricks and Tableau</h3>
-        <p>My interest in Data Visualization has led me to explore Viz projects using real world data analysis. One is where I have analyzed and visualized electric vehicle registration data to uncover trends in model types, geographic distribution, and eligibility for clean alternative fuel programs using Databricks cloud-based analytics platform. And another, where I performed exploratory data analysis on diabetes dataset using Tableau, creating self-explanatory dashboards showing key insights into the factors affecting diabetes outcomes.</p>
-        <p><strong>Technologies:</strong> Azure Databricks, SQL, Delta Lake</p>
-      </div>
+        <h3>Certifications & Awards</h3>
+      <ul>
+        <li>Microsoft Certified Professional - SQL Server Exam 70-462</li>
+        <li>Azure Fundamentals AZ-900 Certified</li>
+        <li>Microsoft Badge - Query Performance Optimization</li>
+        <li>ITIL v3 Foundation Certified</li>
+        <li>HCL Comnet Jewel Awardee</li>
+        <li>Accenture Aon AIC2020 Rewards</li>
+        <li>Automation Prime Certification - Accenture</li>
+      </ul>
 
     </section>
 
+    <section id="projects" class="container">
+        <h2>Projects</h2>
+        <ul>
+            <li><strong>Aon (Accenture):</strong>Stabalized and led a hybrid(on-shore and off-shore) team of 5 providing end to end application database support. Recognized as an 'Automation Prime’ for efforts around automating routine DBA tasks and improving incident response times using scripting and monitoring tools. One of such project was to automate SQL Server alerting by integrating Moogsoft with xMatters, enabling real-time incident escalation through mobile phone, cutting response times of critical database issues by 40%.</li>
+            <li><strong>iQor : </strong>Managed SQL databases supporting critical data operations. Reformed backup and recovery strategy for all non-production systems, removing redundancy and releasing more than 40% disk space allocation. Led POCs for new on premise and Azure features, documenting findings and presenting implementation strategies to stakeholders.</li>
 
+            <li><strong>Bekaert (HCL):</strong>Installed, patched, and managed SQL Server across multiple platforms and performing database refresh and restore activity on Pre-Prods with standard configrations and support.Optimized SQL database performance by fine-tuning queries, re-indexing, and monitoring system health, resulting in a 40% reduction in query execution time.</li>
 
-    <section>
-      <h2>Contact</h2>
-      <p>Email: <a href="mailto:knk.dhyani@gmail.com">knk.dhyani@gmail.com</a></p>
-      <p>GitHub: <a href="https://github.com/kanikadhyani" target="_blank">github.com/kanikadhyani</a></p>
-      <p>LinkedIn: <a href="https://linkedin.com/in/kanikadhyani" target="_blank">linkedin.com/in/kanikadhyani</a></p>
+            <li><strong>Rendeview Ltd (Freelance) :</strong>Conducted initial discovery calls to gather business requirements, assess the technical landscape, and define project objectives. Maintained comprehensive technical documentation, including configuration details, custom solutions, and SOPs for internal stakeholders.</li>
+
+            <li><strong>Data Analysis and Visualization Using Databricks and Tableau :</strong>My interest in Data Visualization has led me to explore Viz projects using real world data analysis. One is where I have analyzed and visualized electric vehicle registration data to uncover trends in model types, geographic distribution, and eligibility for clean alternative fuel programs using Databricks cloud-based analytics platform. And another, where I performed exploratory data analysis on diabetes dataset using Tableau, creating self-explanatory dashboards showing key insights into the factors affecting diabetes outcomes.</li>
+                   </ul>
     </section>
-  </div>
 
-  <footer>
-    <p>© 2025 Kanika Dhyani. All rights reserved.</p>
-  </footer>
+    <section id="contact" class="container">
+        <h2>Contact Information</h2>
+        <p>Email: knk.dhyani@gmail.com</p>
+        <p>Phone: +1 706-315-6219</p>
+        <p>LinkedIn: <a href="www.linkedin.com/in/kanika-dhyani-mssqldba" target="_blank" rel="noopener noreferrer">Connect with me</a></p>
+    </section>
+
+    <footer>
+        <p>&copy; <span id="year"></span> Kanika Dhyani. All rights reserved.</p>
+    </footer>
+
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+
+
+
+
 </body>
-
 </html>
