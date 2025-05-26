@@ -60,16 +60,22 @@
             padding: 1rem 0;
             margin-top: 2rem;
         }
+
+.menu-toggle {
+  color: white;    /* make icon white */
+  font-size: 26px;
+  padding: 15px 20px;
+  cursor: pointer;
+  user-select: none;
+}
+
+
         @media (max-width: 768px) {
             header {
                 padding: 5rem 1rem;
             }
             h1 {
                 font-size: 2rem;
-            }
-            nav ul {
-                flex-direction: column;
-                align-items: center;
             }
             #about {
                 flex-direction: column;
@@ -78,6 +84,28 @@
             .container {
                 padding: 1.5rem;
             }
+
+
+  nav ul {
+    display: none; /* Hide menu by default */
+    flex-direction: column;
+    width: 100%;
+  }
+
+  nav ul.show {
+    display: flex; /* Show menu when toggled */
+  }
+
+  nav ul li a {
+    padding: 15px;
+    border-top: 1px solid #444;
+  }
+
+  /* Show hamburger */
+  .menu-toggle {
+    display: block;
+  }
+
         }
 
 
@@ -128,7 +156,8 @@ html, body {
 </div>
 
     <nav>
-        <ul>
+       <div class="menu-toggle" id="menu-toggle">&#9776;</div> <!-- Hamburger icon -->
+  <ul id="menu">
             <li><a href="#about">About Me</a></li>
             <li><a href="#achievements">Technical Achievements</a></li>
             <li><a href="#projects">Projects</a></li>
@@ -216,7 +245,15 @@ html, body {
         behavior: "smooth"
       });
     });
-  </script>
+
+  const menuToggle = document.getElementById('menu-toggle');
+  const menu = document.getElementById('menu');
+
+  menuToggle.addEventListener('click', () => {
+    menu.classList.toggle('show');
+  });
+</script>
+
 
 </body>
 </html>
